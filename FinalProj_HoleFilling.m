@@ -14,7 +14,7 @@ patch_size = 11;
 % Read in the image, convert to RGBA with holes denoted by 0 alpha.
 % Identify the region and size of the hole.
 
-[Img,~,Img_alpha] = imread("testimg5.png");
+[Img,~,Img_alpha] = imread("testimg2.png");
 
 % find hole size
 
