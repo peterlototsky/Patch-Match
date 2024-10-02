@@ -18,7 +18,7 @@ This repository implements the Patch-Match algorithm for image hole filling. The
 ![Alt Text](/test_inputs/testimgoriginal.png)
 ![Alt Text](/test_inputs/testimg.png)
 
-# Sample Output
+## Sample Output
 ![Alt Text](/test_outputs/testimgout.png)
 
 ## How to Use
