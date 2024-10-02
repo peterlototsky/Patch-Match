@@ -14,7 +14,7 @@ patch_size = 11;
 % Read in the image, convert to RGBA with holes denoted by 0 alpha.
 % Identify the region and size of the hole.
 
-[Img,~,Img_alpha] = imread("testimg2.png");
+[Img,~,Img_alpha] = imread("./test_inputs/testimg.png");
 
 % find hole size
 
@@ -107,7 +107,7 @@ for i = 1:1:size(ImgFill,1)
 end
 
 % start patch match proccess
-% first step
+% first step7
 NNF = patchMatchNNFHole(ImgFill, ImgScales{1,1}, ImgScales{1,2});
 ImgScales{1,1} = voteNNFHole(NNF, ImgScales{1,1}, ImgScales{1,2});
 
@@ -129,6 +129,8 @@ end
 
 figure(2)
 imshow(ImgScales{numScales,1})
+
+imwrite(ImgScales{numScales,1},"./test_outputs/testimgout.png");
 
 
 
